@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img src="https://static1.squarespace.com/static/555b7fd5e4b0c7c58cfd6cf4/t/57dffe1915d5dba740cf7357/1673449867341/" class="logo">
+                
+                <nav>
+                    <ul id="menulist">
+                        <li><a href="#home" class="active">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <img src="https://cdn3d.iconscout.com/3d/premium/thumb/hamburger-menu-2997247-2516285.png" class="menu-icon" onclick="togglemenu()">
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <h2>Beginner web developer</h2>
+                    <h3>Hello,I am Shruti</h3>
+                    <p>making personal website</p>
+                </div>
+                <div class="col-2">
+                    <img src="https://img.freepik.com/free-vector/hand-drawn-web-developers_23-2148819604.jpg?w=2000" class="controller">
+                   
+                </div>
+            </div>
+            <section></section>
+            <!-- about section -->
+            <section class="about" id="about">
+                <h1 class="heading"><span>About</span>    Me</h1>
+                <div class="about-text">
+                    <div class="info">
+                        <h3><span>name :</span>Shruti</h3>
+                        <h3><span>age :</span>18</h3>
+                        <h3><span>language :</span>Kannada</h3>
+                        <h3><span>college :</span>Kls git</h3>
+                        <h3><span>Interseted in :</span>website development</h3>
+                        <a href="#"><button class="btn">download CV<span><i class="fa-solid fa-download"></i></span></button></a>
+                    </div>
+                    
+                </div>
+            </section>
+              <!-- contact section -->
+              <section class="contact" id="contact">
+                <h1 class="heading"><span>Contact</span>    Me</h1>
+                <div class="contact-text">
+                    <div class="content">
+                        <h3 class="title">contact info</h3>
+                        <div class="inf">
+                            <h3><i class="fa-solid fa-envelope"></i>shruti@gmail.com</h3>
+                            <h3><i class="fa-solid fa-phone"></i>+123-456-7890</h3>
+                            <h3><i class="fa-solid fa-phone"></i>+111-222-3333</h3>
+                            <h3><i class="fa-solid fa-location-dot"></i>mumbai, india - 400104</h3>
+                        </div>
+                        <form action="">
+                            <input type="text" placeholder="name" class="box">
+                            <input type="email" placeholder="email" class="box">
+                            <input type="text" placeholder="project" class="box">
+                           
+                            <textarea name="" id="" cols="5" rows="5" class="box message" placeholder="message"></textarea>
+                            <button type="submit" class="btn">send <i class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+                </section>
+           
+        </div>
+        <script>
+            var menulist=document.getElementById("menulist");
+            menulist.style.maxHeight="0px";
+            function togglemenu(){
+                if(  menulist.style.maxHeight=="0px"){
+                    menulist.style.maxHeight="130px";
+                }
+                else{
+                    menulist.style.maxHeight="0px";
+                }
+            }
+        </script>
+    </body>
+</html>

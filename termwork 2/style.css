@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+   
+   background: var(#2a2a2a);
+   color:var(#fff);
+}
+
+.container{
+    background-color: #2a2a2a;
+   color: #fff;
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 100px;
+    height:60px;
+    cursor: pointer;
+    margin: 30px 0;
+
+}
+.menu-icon{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+nav{
+    flex: 1;
+    text-align: right;
+   
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+   
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+   
+   
+}
+nav ul li a:hover{
+    color: #f72e2e;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+    
+}
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+.col-1 h2{
+    font-size: 54px;
+}
+.col-1 h3{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+.col-1 p{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 100;
+   
+}
+.col-1::after{
+    content: '';
+    width: 10px;
+    height:57%;
+    color: #707070;
+    position: absolute;
+    left: -40px;
+    top:8px;
+}
+.col-2{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+.col-2 .controller{
+    width:90%;
+}
+
+.btn{
+    padding: .7rem 3rem;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+.btn i{
+    padding: 0 .5rem;
+    font-size:1.8rem;
+    
+}
+.btn:hover{
+    background: rgb(247, 247, 129);
+    color: #2a2a2a;
+}
+.heading{
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 40px;
+    padding: 1rem;
+    border-bottom: .1rem solid #fff4;
+    color: #fff;
+}
+.heading span{
+    color: yellow;
+}
+.about .about-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    text-transform: uppercase;
+}
+.about .about-text .info{
+    flex: 1 1 48rem;
+    padding: 2rem 1rem;
+    padding-left: 6rem;
+}
+.about .about-text .info h3{
+    font-size: 2rem;
+    color:yellow;
+    padding: 1rem 0;
+    font-weight: normal;
+}
+.about .about-text .info h3 span{
+    color: #eee;
+    padding: 0 .5rem;
+}
+.contact .contact-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    text-transform: uppercase;
+}
+.contact .contact-text .content{
+    flex: 1 1 30rem;
+    padding: 4rem;
+    padding-bottom: 0;
+}
+.contact .contact-text form{
+    flex: 1 1 45rem;
+    padding: 2rem;
+    margin: 2rem;
+    margin-bottom: 4rem;
+}
+.contact .contact-text form .box{
+    padding: 1rem;
+    margin: 1rem 0;
+    background: #333;
+    color: #fff;
+    text-transform: none;
+    font-size: 1rem;
+    width: 80%;
+}
+.contact .contact-text .content .title{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+.contact .contact-text .content .inf h3{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: #eee;
+    padding: 1rem 0;
+    font-weight: normal;
+}
+.contact .contact-text .content .inf h3 i{
+    padding-left: 1rem;
+    color: yellow;
+}
+@media only screen and (max-width:700px){
+    nav ul{
+        width:100%;
+       
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+        
+        text-shadow: 2px 2px 5px rgb(28, 180, 245);
+    }
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menulist{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .row{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    .col-2{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+    .col-2 .controller{
+        width: 77%;
+    }
+    .color-box{
+        transform: translateX(75px);
+    }
+    .col-1{
+        flex-basis: 100%;
+    }
+    .col-1 h2{
+        font-size: 35px;
+    }
+    .col-1 h3{
+        font-size: 15px;
+    }
+    .heading{
+        margin: 0 3rem;
+    }
+    .contact .contact-text form{
+        margin: 3rem 0;
+    }
+}
